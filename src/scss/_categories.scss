@@ -1,0 +1,38 @@
+#categories {
+	height: 200px;
+}
+
+
+#category-mens{
+	background-image: url("../images/mens-category.jpg");
+	background-position: center;
+	text-align: center;
+	width:50%;
+}
+
+#category-trends{
+	background-image: url("../images/trends-category.jpg");
+	text-align: center;
+	width: 25%;
+}
+
+#category-glasses{
+	background-image: url("../images/glasses-category.jpg");
+	text-align: center;
+	width: 25%;
+}
+
+#category-sale{
+	background-image: url("../images/sale-category.jpg");
+	text-align: center;
+	width: 25%;
+}
+
+#category-bags{
+	background-image: url("./src/images/bags-category.jpg");
+	text-align: center;
+	width: 25%;
+}
+
+#category-womens{
+	background-image: url("../images/womens-category.jpg");

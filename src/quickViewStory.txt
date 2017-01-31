@@ -1,0 +1,5 @@
+Quick View
+
+-The user should have the ability to click on a button in the product carousel to open a popup with more information about the product
+-Detect when the Quick View button is clicked
+-When the button is clicked, a popup opens displaying a larger photo of the product,product name, a short description, and the price. The popup also contains an Add to Cart button like in the carousel

@@ -1,0 +1,116 @@
+.font-family-monospace{
+	font-family: RobotoMono, Courier, serif;
+	}
+
+.font-family-sans-serif{
+	font-family: Roboto, sans-serif;
+	text-transform: uppercase;
+}
+
+.text-white{
+	color: #FFF;
+}
+
+.text-black{
+	color: black;
+}
+
+.text-red{
+	color: red;
+}
+
+.text-green{
+	color: #338e23;
+}
+
+.text-silver{
+	color: dimgrey;
+}
+
+.text-shadow-small-dimgrey{
+	text-shadow: 1px 1px 1px dimgrey;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-bold{
+	font-weight: bold;
+}
+
+.text-italic{
+	font-style: italic;
+}
+
+.no-italic{
+	font-style: normal;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.lowercase{
+	text-transform: lowercase;
+}
+
+.capitalize{
+	text-transform: capitalize;
+}
+
+.small-font{
+	font-size:0.75rem;
+}
+
+.line-height-125-percent{
+	line-height: 125%
+}
+
+.line-height-180-percent{
+	line-height: 180%
+}
+
+.line-height-200-percent{
+	line-height: 200%
+}
+
+.line-height-300-percent{
+	line-height: 300%
+}
+
+p{
+	font-family: Raleway;
+	font-size: 1rem;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 4rem;
+	letter-spacing: 2px;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h4{
+	font-size: 1.5rem;
+	font-weight: 200;
+}
+
+h5 {	
+	top: 33%;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;	
+}
+
+a:hover {
+	color: #ea5038;
+}
+a:active {
+	color: dimgrey;
+}

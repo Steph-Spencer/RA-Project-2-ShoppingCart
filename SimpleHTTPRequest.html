@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Example</title>
+    <script>
+
+        function outputToDiv(text){
+            var outputDiv = document.getElementById("output");
+            var newTextNode = document.createTextNode(text);
+            var newElementNode = document.createElement("br");
+            outputDiv.appendChild(newTextNode);
+            outputDiv.appendChild(newElementNode);
+        }
+
+        function processResults(theData){
+            outputToDiv(theData);
+            var output = "", i = 0 ;
+            var theJSON = JSON.parse(theData);
+        /   for (i = 0 ; i < theJSON.length ; i++){
+          //      output += "<a href='" + theJSON[i].url + "'>";
+          //      output += theJSON[i].display;
+          //      output += "</a><br>";
+
+            }
+            document.getElementById("output").innerHTML = output;
+        }
+
+        function onResults(e){
+            console.log(e); // e is the event object
+            if( e.target.readyState==4 && e.target.status==200 ){
+                console.log("ready");
+                processResults(e.target.responseText);
+            }
+        }
+
+        function init(e){
+            var serviceChannel = new XMLHttpRequest();
+            serviceChannel.addEventListener("readystatechange",onResults,false);
+
+           // var url = "someLinks.txt";
+           var url = "bbProducts.json"
+            serviceChannel.open("GET",url,true);
+            serviceChannel.send();
+        }
+
+        window.addEventListener("load",init,false);
+    </script>
+</head>
+<body>
+    <div id="output">
+
+    </div>
+<p>Note: In order for this file to work, we would need to post this file to a hosting provider that has a web server installed.</p>
+</body>
+</html>

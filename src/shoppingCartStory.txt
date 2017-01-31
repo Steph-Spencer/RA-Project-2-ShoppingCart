@@ -1,0 +1,37 @@
+Add to Cart Button
+
+-Detect when Add to Cart button is clicked
+-If the product is not already in cart, then it will be added to the list of products in the cart and display SKU, possibly the name of the product, and the price. If the product is already in the cart, then increment the quantity by 1.
+-Once the item is added to the cart, a popup appears informing the user that the item was added successfully
+-The counter in the header updates to reflect the current number of items in the cart
+
+View Cart
+
+-Detect when user clicks on cart icon
+-When icon is clicked, a popup appears displaying shopping cart contents, including: a list of items in the cart, their corresponding prices and quantities. The user will have the ability to update the quantities of individual items, remove items from the cart, clear the cart, and initiate the check out process.
+
+Update Quantity
+
+-The user should be able to change the quantity of an item they wish to order, either by entering a numeric value in a field or using buttons to increment or decrement the value. HOW DOES THE USER SUBMIT THIS??? The new value then replaces the existing quantity.
+-if the value submitted is 0 then the item should disappear from the cart as in Remove from Cart below.
+
+Remove from Cart
+
+-The user should have the ability to remove items from their cart altogether
+-Detect when the Remove button is clicked 
+When the user clicks on the Remove button, the corresponding item will disappear from the cart and the subtotal will update
+-The counter in the header will also update accordingly, displaying the current number of items in the cart.
+
+Clear Cart
+
+-The user should have the ability to remove all of the contents of the cart with the click of a button
+-Detect when Clear Cart button is clicked
+-When the click event occurs, all quantities will revert to a value of zero and the items disappear from the cart
+- the header counter will disappear after the cart is cleared
+-the checkout button should disappear when cart is empty
+
+Proceed to Checkout
+
+-The user requires the ability to click a button to initiate the checkout process
+-Detect when the Checkout button is clicked
+-when click occurs...

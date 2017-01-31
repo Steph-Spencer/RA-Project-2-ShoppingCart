@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6-Based Demo Template</title>
+    <script>
+        class OutputDebugger{
+            constructor(){
+                this.outputDiv = document.getElementById("output");
+
+            }
+
+            outputToDiv(text){
+                let newTextNode = document.createTextNode(text);
+                let newElementNode = document.createElement("br");
+                this.outputDiv.appendChild(newTextNode);
+                this.outputDiv.appendChild(newElementNode);
+            }
+        }
+
+        let init = (e) =>{
+            let outputDebugger = new OutputDebugger();
+            outputDebugger.outputToDiv("hello again!");
+        };
+
+        window.addEventListener("load",init,false);
+
+
+    </script>
+</head>
+<body>
+<div id="output">
+
+</div>
+</body>
+</html>
