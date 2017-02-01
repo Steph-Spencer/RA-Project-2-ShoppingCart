@@ -1,10 +1,11 @@
-.font-family-monospace{
-	font-family: RobotoMono, Courier, serif;
+.font-family-monotype{
+	font-family: 'Roboto Mono', Courier, serif;
+	font-weight: 100;
+	letter-spacing: 4px;
 	}
 
 .font-family-sans-serif{
-	font-family: Roboto, sans-serif;
-	text-transform: uppercase;
+	font-family: Roboto, Helvetica, sans-serif;
 }
 
 .text-white{
@@ -24,11 +25,7 @@
 }
 
 .text-silver{
-	color: dimgrey;
-}
-
-.text-shadow-small-dimgrey{
-	text-shadow: 1px 1px 1px dimgrey;
+	color: #c3c3c3;
 }
 
 .text-center{

@@ -21,7 +21,7 @@ export default class App {
     initBestBuyWebService(){
         this.bbws = new BestBuyWebService();
         // use your own API key for this (the one from Cody)
-        this.bbws.apiKey = "8ccddf4rtjz5k5btqam84qak";
+        this.bbws.apiKey = "SXkiDh8lcFEAqyG6rDmJjlH4";
 
         // this uses 'backticks' for long multi-line strings
         this.bbws.url = `https://api.bestbuy.com/v1/products((categoryPath.id=abcat0502000))?apiKey=${this.bbws.apiKey}&format=json`;

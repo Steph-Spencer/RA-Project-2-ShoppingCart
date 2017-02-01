@@ -26,6 +26,7 @@ export default class ShoppingCart{
     }
 
     removeItemFromCart(sku){
+   // replace value of session data-sku quantity with null//
 
     }
 
@@ -34,6 +35,7 @@ export default class ShoppingCart{
     }
 
     clearCart(){
+        sessionStorage.clear();
         // clear the entire cart
     }
 
