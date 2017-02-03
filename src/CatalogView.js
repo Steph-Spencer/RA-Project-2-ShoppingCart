@@ -1,9 +1,4 @@
-/**
- * Created by Edward_J_Apostol on 2017-01-28.
- */
 
-// this class is responsible for displaying the product data...
-// Perhaps in a carousel.
 export default class CatalogView{
 
     constructor(){
@@ -68,10 +63,10 @@ export default class CatalogView{
             newImg.setAttribute("alt", `${product.name}`); // this works too
             newImg.setAttribute("data-sku",product.sku);
 
-            // create a new Paragraph to show a description
+            // create a new Paragraph to show a manufacturer
             let newPara = document.createElement("p");
-            newPara.setAttribute("class","product-type");
-            let newParaTextNode = document.createTextNode(product.longDescription);
+            newPara.setAttribute("class","productmake");
+            let newParaTextNode = document.createTextNode(product.manufacturer);
             newPara.appendChild(newParaTextNode);
 
             // create a new H3 tag to show the name

@@ -9,6 +9,19 @@
 		<script src="https://use.fontawesome.com/001bdbae97.js"></script>
 	</head>
 	<body>
+	<div class="overlay"></div>
+	<div id="viewcart" class="viewcart">
+		<h3>your cart</h3>
+		<div>
+			<div id="cart-product-img"></div>
+			<div id="cart-make-name">apple</div>
+			<div id="cart-price">$1M</div>
+			<div id="cart-quantity">7</div>
+			<div id="cart-update-remove-buttons"></div>
+		</div>
+	</div>
+	<div id="quickview">
+	</div>
 			<header class="flex justify-between flex-wrap align-items-center">
 				<img class="left padding-medium" src="./images/aloha-logo.svg" alt="Aloha Apparel logo" id="logo">
 					<div id="navigation" class="uppercase width-30 flex font-family-sans-serif text-red justify-between flex-wrap line-height-200-percent">
@@ -18,7 +31,7 @@
 						<div>updates</div>
 					</div>
 				<div id="cart">
-				<img class="right padding-medium" src="./images/cart-icon.svg" alt="Shopping cart icon">
+				<img class="right padding-medium cart" src="./images/cart-icon.svg" alt="Shopping cart icon">
 				<input type="text" name="counter" id="counter" class="text-white font-family-sans-serif">
 				</div>
 			</header>
@@ -26,7 +39,7 @@
 			<section>
 				<div id="banner">
 					<div class="background-image-fix flex"></div>
-					<div ID="banner-text" class="text-white z-index-2 flex-center-xy">
+					<div ID="banner-text" class="text-white z-index-2"></div>
 					<h5 class="font-family-monotype text-center uppercase">want to buy</h5>
 					<h1 class="padding-medium font-family-sans-serif uppercase">cool shit from bestbuy?</h1>
 					</div>
@@ -34,8 +47,8 @@
 			</section>
 			<section>
 				<div id="CTA" class="text-center padding-top-7vh padding-bottom-7vh">				
-					<h2 class="font-family-monotype text-silver">Have you ever wanted to <span class="text-bold no-italic text-green">buy something?<span></h2>
-					<p class="padding-3sides-no-bottom text-silver line-height-180-percent font-family-sans-serif">Tumeric taxidermy mixtape tattooed farm-to-table. Fixie taxidermy organic subway tile unicorn. Unicorn af bushwick tofu literally, hell of sriracha messenger bag four dollar toast glossier. Heirloom lumbersexual wolf banh mi hella.</p>
+					<h2 class="font-family-monotype text-silver line-height-300-percent">Have you ever wanted to <span class="text-bold no-italic text-green">buy something?<span></h2>
+					<p class="text-silver line-height-180-percent font-family-sans-serif padding-bottom-7vh">Tumeric taxidermy mixtape tattooed farm-to-table. Fixie taxidermy organic subway tile unicorn. Unicorn af bushwick tofu literally, hell of sriracha messenger bag four dollar toast glossier. Heirloom lumbersexual wolf banh mi hella.</p>
 				</div>
 			</section>
 			<section id="categories" class="uppercase text-center flex">
@@ -69,7 +82,8 @@
 						</div>
 				<div id="productroll" class="owl-carousel owl-theme text-center">
 					<!--DYNAMICALLY GENERATE CAROUSEL CONTENT SEPARATED INTO DIVS-->
-				</div>	
+				</div>
+
 			</section>
 			<section class="clearfix">
 				<div  id="subscribe-cta" class="background-color-green text-center uppercase">
@@ -83,6 +97,8 @@
 					</div>
 				</div>
 			</section>
+			
+
 		</main>
 			<footer class="background-color-dk-grey clearfix margin-top-1vh">
 				<div id="social-links" class="right text-white font-family-sans-serif margin-top-bottom-7vh line-height-200-percent">
@@ -95,9 +111,6 @@
 						<li><i class="fa fa-google-plus socialicons" aria-hidden="true"></i><span class="hidden-for-mobile"><a href="http://plus.google.com/alohaapparel">Google+</a></span></li>
 					</ul>
 				</div>
-				<div id="quick-view">
-				</div>
-				<div id="view-cart">
 			</footer>
 	</body>
 	 <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>

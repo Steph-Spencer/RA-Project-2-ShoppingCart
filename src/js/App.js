@@ -1,6 +1,3 @@
-/**
- * Created by Edward_J_Apostol on 2017-01-28.
- */
 
 import BestBuyWebService from './BestBuyWebService';
 import CatalogView from './CatalogView'
@@ -16,6 +13,7 @@ export default class App {
         // call the initBestBuyWebService to initialize the
         // BestBuy Web Service and return the data
         this.initBestBuyWebService();
+
     }
 
     initBestBuyWebService(){
@@ -51,7 +49,9 @@ export default class App {
             this.catalogView.addProductsToCarousel(this.products,this);
             // this.catalogView.showCatalog();
         }
-    }
+    });
+
+   }
 
 }
 

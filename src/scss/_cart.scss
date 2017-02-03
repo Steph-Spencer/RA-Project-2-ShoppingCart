@@ -1,0 +1,23 @@
+.overlay,#viewcart  {
+	position: fixed;
+}
+.overlay {
+	z-index:2;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.5);
+}
+#viewcart {
+	z-index:3;
+	width:60%;
+	left:50%;
+	margin-left:-30%;
+	box-shadow: 0 0 15px #000;
+}
+
+.h3 .viewcart {
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+}
+
