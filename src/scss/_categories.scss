@@ -1,39 +1,52 @@
-#categories {
-	height: 200px;
+#categories{
+	width: 100%;
 }
-
 
 #category-laptops{
 	background-image: url("../../../../images/laptop-category.jpg");
 	background-position: center;
 	text-align: center;
 	width:50%;
+	height:300px;
+	font: roboto, sans-serif;
 }
 
 #category-4ktv{
 	background-image: url("../../../../images/tv-category.jpg");
 	text-align: center;
 	width: 25%;
+	height:300px;
+	font: roboto, sans-serif;
 }
 
 #category-homeaudio{
 	background-image: url("../../../../images/home-audio-category.jpg");
 	text-align: center;
 	width: 25%;
+	height:300px;
+	font: roboto, sans-serif;
 }
 
 #category-tablets{
 	background-image: url("../../../../images/tablet-category.jpg");
 	text-align: center;
 	width: 25%;
+	height:300px;
+	font: roboto, sans-serif;
 }
 
 #category-desktop{
 	background-image: url("../../../../images/desktop-category.jpg");
 	text-align: center;
 	width: 25%;
+	height:300px;
+	font: roboto, sans-serif;
 }
 
-#category-womens{
+#category-cellphones{
 	background-image: url("../../../../cell-category.jpg");
+	text-align: center;
+	width: 25%;
+	height:300px;
+	font: roboto, sans-serif;
 }

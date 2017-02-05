@@ -5,7 +5,7 @@
 	}
 
 .font-family-sans-serif{
-	font-family: Roboto, Helvetica, sans-serif;
+	font-family: Roboto;
 }
 
 .text-white{
@@ -77,15 +77,17 @@
 }
 
 p{
-	font-family: Raleway;
+	font-family: Roboto;
 	font-size: 1rem;
 }
 
 h1 {
-	font-weight: 700;
-	font-size: 4rem;
-	letter-spacing: 2px;
+	font-weight: bolder;
+	font-size: 3rem;
+	letter-spacing: 3px;
 	color: #FFF;
+	padding-bottom: 8px;
+	font:'Roboto Black';
 }
 
 h2 {
@@ -98,7 +100,7 @@ h4{
 }
 
 h5 {	
-	top: 33%;
+	letter-spacing: 4px;
 }
 
 a {
@@ -107,7 +109,7 @@ a {
 }
 
 a:hover {
-	color: #ea5038;
+	color: #338e23;
 }
 a:active {
 	color: dimgrey;

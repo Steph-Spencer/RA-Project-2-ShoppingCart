@@ -54,10 +54,10 @@
 			<header class="flex justify-between flex-wrap align-items-center">
 				<img class="left padding-medium" src="./images/aloha-logo.svg" alt="Aloha Apparel logo" id="logo">
 					<div id="navigation" class="uppercase width-30 flex font-family-sans-serif text-red justify-between flex-wrap line-height-200-percent">
-						<div>about</div>
-						<div>shop</div>
-						<div>featured</div>
-						<div>updates</div>
+						<div><a href="#CTA">about</a></div>
+						<div><a href="#categories">shop</a></div>
+						<div><a href="#productroll">featured</a></div>
+						<div><a href="#subscribe-cta">updates</a></div>
 					</div>
 				<div id="cart">
 				<img class="right padding-medium cart" src="./images/cart-icon.svg" alt="Shopping cart icon">
@@ -67,11 +67,13 @@
 		<main>
 			<section>
 				<div id="banner">
-					<div class="background-image-fix flex"></div>
-					<div ID="banner-text" class="text-white z-index-2"></div>
-					<h5 class="font-family-monotype text-center uppercase">want to buy</h5>
-					<h1 class="padding-medium font-family-sans-serif uppercase">cool shit from bestbuy?</h1>
+					<div class="background-image-fix"></div>
+					<div ID="banner-text" class="text-w hite z-index-2">
+						<h5 class="font-family-monotype uppercase text-white">want to buy</h5>
+						<h1 class="font-family-sans-serif uppercase">cool shit from best buy?</h1>
+						<div id="banner-button" class="font-family-sans-serif uppercase"><a href="#productroll">click here</a></div>
 					</div>
+				</div>
 				</div>
 			</section>
 			<section>
@@ -82,32 +84,32 @@
 			</section>
 			<section id="categories" class="uppercase text-center flex">
 				<div id="top-row" class="justify-between row flex width-100 categories">
-					<div id="laptops-category" class="background-image-fix category-laptops font-family-sans-serif">
+					<div id="laptops-category" class="background-image-fix category-laptops">
 						<p>laptops/ultrabooks</p>
 					</div>
-					<div id="4ktv-category" class="background-image-fix category-4ktv font-family-sans-serif">
+					<div id="4ktv-category" class="background-image-fix category-4ktv">
 						<p>4k tv<span class="lowercase">s</span></p>
 					</div>
-					<div id="homeaudio-category" class="background-image-fix category-homeaudio font-family-sans-serif">
+					<div id="homeaudio-category" class="background-image-fix category-homeaudio">
 						<p>home audio</p>
 					</div>
 				</div>
-				<div id="bottom-row" class="row justify-between flex width-100 categories" >
-					<div id="tablets-category" class="category-tablets background-image-fix font-family-sans-serif">
+				<div id="bottom-row" class="row justify-between flex" >
+					<div id="tablets-category" class="category-tablets background-image-fix">
 						<p>tablets</p>
 					</div>
-					<div id="desktops-category" class="category-desktop background-image-fix font-family-sans-serif">
+					<div id="desktops-category" class="category-desktop background-image-fix">
 						<p>desktops</p>
 					</div>
-					<div id="cellphones-category" class="category-cellphones background-image-fix font-family-sans-serif">
+					<div id="cellphones-category" class="category-cellphones background-image-fix">
 						<p>cellphones</p>
 					</div>
 				</div>
 			</section>
 			<section>
-			<div ID="ProductsTitle" class="text-center">
+			<div id="products-title">
 						<h2 class="padding-medium font-family-monotype text-silver uppercase">you like stuff?</h2>
-						<h5 class="text-center font-family-sans-serif text-silver">we got stuff</h5>
+						<h5 class="text-center font-family-sans-serif text-silver uppercase">we got stuff</h5>
 						</div>
 				<div id="productroll" class="owl-carousel owl-theme text-center">
 					<!--DYNAMICALLY GENERATE CAROUSEL CONTENT SEPARATED INTO DIVS-->

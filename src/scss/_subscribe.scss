@@ -1,7 +1,6 @@
 #subscribe-cta {
 	background: #338e23;
 	background-position: bottom;
-	margin-bottom: 10px;
 	width: 100%;
 	min-height: 45vh;
 	margin: 0 auto;
@@ -11,7 +10,8 @@
 	display: block;
 	width: 50%;
 	margin:auto;
-	font-size: 1rem;
+	font-size: 0.75rem;
+	letter-spacing: initial;
 }
 
 #signup {

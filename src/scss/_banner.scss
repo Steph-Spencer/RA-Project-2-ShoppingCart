@@ -2,13 +2,35 @@
 	clear: both;
 	background-image: url("../../../../images/banner.jpg");
 	background-size: cover;
-	min-height: 80vh;
-	position: top;
+	min-height: 75vh;
+	position: bottom;
+	repeat: no-repeat; 
 }
 
 #banner-text {
-	width: 50%;
+	width: 60%;
+	margin-left: 25%;
 	min-height: 40%;
 	display: block;
 	font-size: 1.5rem;
+	padding-top: 13%;
+	}
+
+#banner-text h5 {
+	letter-spacing: 9px;
+	font-weight: 100;
+}
+
+#banner-button {
+	width: 145px;
+	text-align: center;
+	line-height: 300%;
+	border: thin solid #338e23;
+	color: #fff;
+	display: block;
+	font-size: 0.75rem; 
+}
+
+a {
+	color: #fff;
 }

@@ -58,10 +58,11 @@ export default class CatalogView{
             // create a new IMG tag. Suggest to add data-sku attribute here too
             // so that if you 'click' on the image, it would pop up a quick-view
             // window and you can use the sku.
-            let newImg = document.createElement("img");
+            let newImg = document.createElement("img");//change to div
             newImg.setAttribute("src", product.image);
             newImg.setAttribute("alt", `${product.name}`); // this works too
             newImg.setAttribute("data-sku",product.sku);
+            // create a set attribute "style" `
 
             let hr = document.createElement("hr");
 
