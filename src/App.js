@@ -6,6 +6,7 @@ import BestBuyWebService from './BestBuyWebService';
 import CatalogView from './CatalogView';
 import ShoppingCart from './ShoppingCart';
 import ShoppingCartView from './js/ShoppingCartView';
+import QuickView from './js/QuickView';
 
 export default class App {
 
@@ -18,6 +19,7 @@ export default class App {
         // BestBuy Web Service and return the data
         this.initBestBuyWebService();
          this.shoppingCartView = new ShoppingCartView();
+         this.quickView = new QuickView();
     }
 
     initBestBuyWebService(){

@@ -63,6 +63,8 @@ export default class CatalogView{
             newImg.setAttribute("alt", `${product.name}`); // this works too
             newImg.setAttribute("data-sku",product.sku);
 
+            let hr = document.createElement("hr");
+
             // create a new Paragraph to show a manufacturer
             let newPara = document.createElement("p");
             newPara.setAttribute("class","productmake");
@@ -76,18 +78,20 @@ export default class CatalogView{
 
             let newPricePara = document.createElement("p");
             newPricePara.setAttribute("class","price");
-            let newPriceParaTextNode = document.createTextNode(product.regularPrice);
+            let newPriceParaTextNode = document.createTextNode("$"+product.regularPrice);
             newPricePara.appendChild(newPriceParaTextNode);
 
             let quickViewButton = document.createElement("button");
             quickViewButton.setAttribute("id",`qv_${product.sku}`);
             quickViewButton.setAttribute("data-sku",product.sku);
+            quickViewButton.setAttribute("class","quickViewButton")
             let quickViewTextNode = document.createTextNode("Quick View");
             quickViewButton.appendChild(quickViewTextNode);
 
             let addToCartButton = document.createElement("button");
             addToCartButton.setAttribute("id",`cart_${product.sku}`);
             addToCartButton.setAttribute("data-sku",product.sku);
+            addToCartButton.setAttribute("class","addToCartButton")
             let addToCartTextNode = document.createTextNode("Add to Cart");
             addToCartButton.appendChild(addToCartTextNode);
             addToCartButton.addEventListener("click",this.onClickCartButton(this.theApp),false);
@@ -95,6 +99,7 @@ export default class CatalogView{
 
 
             newDiv.appendChild(newImg);
+            newDiv.appendChild(hr);
             newDiv.appendChild(newPara);
             newDiv.appendChild(newH3Tag);
             newDiv.appendChild(newPricePara);
