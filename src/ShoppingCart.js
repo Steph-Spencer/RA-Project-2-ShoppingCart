@@ -33,7 +33,7 @@ export default class ShoppingCart{
            sessionStorage.setItem(sku, 1);
            return;
        } else {
-           for (let i = 0; i <sessionStorage.length; i++) {
+           for (let i = 0; i <sessionStorage.length;i++) {
                let currentSku = sessionStorage.key(i);
                if (currentSku.toString() == theSku.toString()) {
                    let currentValue = sessionStorage.getItem(currentSku);
@@ -46,19 +46,23 @@ export default class ShoppingCart{
        }
    }
 
+    updateQuantityofItemInCart(sku,qty){
+      //Let sessions
+
+    }
+
     removeItemFromCart(sku){
    // replace value of session sku quantity with null//
 
     }
 
-    updateQuantityofItemInCart(sky,qty){
-
+   // clearCart(){
+     //   $(document).on('click', '#clearcart',function(evt){
+      //    console.log("I don't want this shit!");
+ //         storage.clear();         
+   //   });
+  
     }
 
-    clearCart(){
-        sessionStorage.clear();
-        // clear the entire cart
-    }
 
-
-}
+//}
