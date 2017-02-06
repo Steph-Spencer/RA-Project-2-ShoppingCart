@@ -192,15 +192,13 @@ hr{
 }
 
 
-/* Styled IDs */
-
-
-
-
-
 #CTA {
 	display: block;
 	width: 70%;
 	margin:auto;
 	min-height: 25vh;
+}
+
+#CTA p{
+	padding-bottom: 10vh;
 }

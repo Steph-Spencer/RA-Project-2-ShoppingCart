@@ -10,27 +10,29 @@
 	</head>
 	<body>
 	<div class="overlay"></div>
-	<div id="viewcart" class="viewcart">
-		<div class="close">close (x)</div>
+	<div id="viewcart" class="viewcart flex">
+		<div id="close" class="close">close (x)</div>
 		<h3>your cart</h3>
 		<div>
 			<div id="cart-product-img"></div>
-			<div id="cart-make-name">
+			<div id="cart-make-name flex">
 				<p id="cart-make">apple</p>
-				<p id="cart-name"></p>
+				<p id="cart-name">gigantor 7000</p>
 			</div>
 			<div id="cart-price">$1M</div>
 			<div id="cart-quantity">
-				<input type="button" name="increment" value="+">
-				<input type="text" name="quantity" value=CurrentQuantity>
-				<input type="button" name="decrement" value="-">
+				<p>quantity</p>
+				<input id="increment" type="button" name="increment" value="+">
+				<input id="quantity-field" type="text" name="quantity" value=1>
+				<input id="decrement" type="button" name="decrement" value="-">
 			</div>
 			<div id="cart-update-remove-buttons">
-				<input type="button" name="update" value="Update">
-				<input type="button" name="remove" Value="Remove">
+				<input id="update" type="button" name="update" value="Update">
+				<input id="remove" type="button" name="remove" Value="Remove">
 			</div>
 			<hr>
-			<input type="button" name="checkout">
+			<input id="clearcart" type="button" name="clearcart" value="clear cart">
+			<input id="checkout" type="button" name="checkout" value="checkout">
 		</div>
 	</div>
 	<div class="overlay"></div>
@@ -56,7 +58,7 @@
 					<div id="navigation" class="uppercase width-30 flex font-family-sans-serif text-red justify-between flex-wrap line-height-200-percent">
 						<div><a href="#CTA">about</a></div>
 						<div><a href="#categories">shop</a></div>
-						<div><a href="#productroll">featured</a></div>
+						<div><a href="#products-title">featured</a></div>
 						<div><a href="#subscribe-cta">updates</a></div>
 					</div>
 				<div id="cart">
@@ -71,7 +73,7 @@
 					<div ID="banner-text" class="text-w hite z-index-2">
 						<h5 class="font-family-monotype uppercase text-white">want to buy</h5>
 						<h1 class="font-family-sans-serif uppercase">cool shit from best buy?</h1>
-						<div id="banner-button" class="font-family-sans-serif uppercase"><a href="#productroll">click here</a></div>
+						<div id="banner-button" class="font-family-sans-serif uppercase"><a href="#products-title">click here</a></div>
 					</div>
 				</div>
 				</div>
@@ -79,7 +81,7 @@
 			<section>
 				<div id="CTA" class="text-center padding-top-7vh padding-bottom-7vh">				
 					<h2 class="font-family-monotype text-silver line-height-300-percent">Have you ever wanted to <span class="text-bold no-italic text-green">buy something?<span></h2>
-					<p class="text-silver line-height-180-percent font-family-sans-serif padding-bottom-7vh">Tumeric taxidermy mixtape tattooed farm-to-table. Fixie taxidermy organic subway tile unicorn. Unicorn af bushwick tofu literally, hell of sriracha messenger bag four dollar toast glossier. Heirloom lumbersexual wolf banh mi hella.</p>
+					<p class="text-silver line-height-180-percent font-family-sans-serif">Tumeric taxidermy mixtape tattooed farm-to-table. Fixie taxidermy organic subway tile unicorn. Unicorn af bushwick tofu literally, hell of sriracha messenger bag four dollar toast glossier. Heirloom lumbersexual wolf banh mi hella.</p>
 				</div>
 			</section>
 			<section id="categories" class="uppercase text-center flex">

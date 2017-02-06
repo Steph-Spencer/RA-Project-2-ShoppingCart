@@ -28,7 +28,7 @@ export default class App {
         this.bbws.apiKey = "SXkiDh8lcFEAqyG6rDmJjlH4";
 
         // this uses 'backticks' for long multi-line strings
-        this.bbws.url = `https://api.bestbuy.com/v1/products((categoryPath.id=abcat0502000))?apiKey=${this.bbws.apiKey}&format=json`;
+        this.bbws.url = `https://api.bestbuy.com/v1/products(condition=new&color=silver&(categoryPath.id=abcat0502000))?apiKey=${this.bbws.apiKey}&format=json`;
 
         // pass the reference to this app to store the data
         this.bbws.getData(this);
