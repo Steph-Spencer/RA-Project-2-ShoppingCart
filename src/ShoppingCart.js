@@ -8,43 +8,39 @@ export default class ShoppingCart{
         console.log("creating shopping cart");
         if(Storage){
             // you can create a shoppingCart!
-            this.initShoppingCart();
+            //this.initShoppingCart();
         } else
         {
             console.log("Error! SessionStorage not supported in your browser!");
         }
     }
 
-   initShoppingCart(sku){
+   /*initShoppingCart(sku){
            if (sessionStorage.getItem(sku) !== "undefined") {
            if (sessionStorage.quantity) {
            sessionStorage.quantity = Number(sessionStorage.quantity)+1;
             } else { sessionStorage.quantity = 0;
        }
-   }
+   }*/
 
-        console.log("finished creating shopping cart");
-    }
+    //    console.log("finished creating shopping cart");
+    //}
 
     addItemToCart(sku){
-         console.log("hello"+sku);
-       let theSku = sku;
-       if (sessionStorage.getItem(sku) == undefined) {
-           sessionStorage.setItem(sku, 1);
-           return;
+      console.log("hello");
+      console.log(sku);
+
+       //let theSku = sku;
+       sku = sku.toString();
+       console.log(sessionStorage.getItem(sku));
+       if (parseInt(sessionStorage.getItem(sku)) >0) {
+        sessionStorage.setItem(sku, parseInt(sessionStorage.getItem(sku)) + 1);
+
        } else {
-           for (let i = 0; i <sessionStorage.length;i++) {
-               let currentSku = sessionStorage.key(i);
-               if (currentSku.toString() == theSku.toString()) {
-                   let currentValue = sessionStorage.getItem(currentSku);
-                   currentValue = parseInt(currentValue);
-                   currentValue = currentValue + 1;
-                   sessionStorage.setItem(theSku, currentValue);
-               }
-               
-           }
-       }
-   }
+          sessionStorage.setItem(sku, 1);
+                  
+        }               
+    }
 
     updateQuantityofItemInCart(sku,qty){
       //Let sessions
