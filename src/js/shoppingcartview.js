@@ -3,7 +3,7 @@ export default class ShoppingCartView{
     constructor(){
         console.log("making a shopping cart");
         this.cart = document.getElementById("viewcart");
-        this.products = theApp.bestBuyWebService.getProducts
+        //this.products = theApp.bestBuyWebService.getProducts
         this.initShoppingCartView();
 
     }
@@ -11,7 +11,7 @@ export default class ShoppingCartView{
 
     initShoppingCartView() {
        $(document).on('click', '#cart',function(evt){
-       		console.log("I clicked the damn cart!");
+       		console.log("I clicked the cart!");
           this.showCartPopUp();
         	$("#viewcart").toggle(); 
         	$(".overlay").toggle();         
@@ -68,10 +68,13 @@ export default class ShoppingCartView{
       </div>
       `;
       }
-      ViewCart.append(output); 
+      $('#viewcart').html(output);
+      //ViewCart.append(output); 
     }
     
     }
 
    }
-}
+
+ }
+ 
