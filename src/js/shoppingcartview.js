@@ -10,9 +10,10 @@ export default class ShoppingCartView{
 
 
     initShoppingCartView() {
-       $(document).on('click', '#cart',function(evt){
+       $(document).on('click', '#cart',this,function(evt){
        		console.log("I clicked the cart!");
-          this.showCartPopUp();
+          console.log(evt.data);
+          evt.data.showCartPopUp();
         	$("#viewcart").toggle(); 
         	$(".overlay").toggle();         
     	});
@@ -30,9 +31,10 @@ export default class ShoppingCartView{
       return;
     }
     for (let i=0; i < sessionStorage.length; i++){
+console.log("asdfasdfasdfasdfasdfads");
       let currentSku = sessionStorage.key(i);
       let currentQty = sessionStorage.getItem(currentSku);
-    for (let p=0; p< this.Products.length; p++){
+    for (let p=0; p< this.products.length; p++){
       let currentProduct = products[p];
       let productSku = currentProduct.sku;
       productSku = productSku.toString();
